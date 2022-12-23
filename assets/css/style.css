@@ -1,0 +1,982 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+
+Theme Name: Xenon Doe | Personal portfolio Website
+Author : MoNir Hossain
+
+
+Taqble of content
+
+1. Common Css
+2. Header css
+3. Banner Css
+4. About Css
+5. Servics Css
+6. Projects Css
+7. Counter Css
+8. Timeline Css
+9.  Testimonial CSS
+10. price CSS
+11. Team CSS
+12. Blig CSS
+13. CTA CSS
+14. Contact CSS
+15. Footer CSS
+16. Responsive Css
+
+*/
+
+
+/* 1. Common Css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+
+a{
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+/*Section Title CSS*/
+.section-title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.section-title h2::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #ff3636;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.section-title h2::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ff3636;
+    bottom: -4px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/*Button CSS*/
+.box-btn{
+    background-color: #ff3636;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    border: 0;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    position:relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.box-btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.box-btn  i{
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #fff;
+   -webkit-transition: .3s;
+   -o-transition: .3s;
+   transition: .3s;
+   opacity: 0;
+   visibility: hidden;
+   
+    
+   
+}
+
+.box-btn:hover i{
+    left: 10px;
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+/*Margin and Padding*/
+
+.pt-80{
+    padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+
+/* 2. Header Css */
+
+.header-area{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    z-index: 999;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.header-area.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0;
+   
+    
+}
+.header-area.sticky a{
+    color: #333 !important;
+}
+.header-area a{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.header-area .navbar-brand{
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+.navbar-nav li a:hover{
+    color: #ff3636 !important;
+}
+
+
+/* 3. Banner Css */
+
+.banner-area{
+    position: relative;
+    height: 100vh;
+}
+
+.banner-area video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.banner-area::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .75;
+    z-index: -1;
+}
+
+.banner-content{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.banner-content h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.banner-content p{
+    font-size: 24px;
+    text-transform: capitalize;
+
+}
+
+
+.banner-content a{
+    margin-top: 25px;
+}
+
+/* 4. About CSS*/
+.about-content h4{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff3636;
+
+}
+
+.about-content h5{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.about-content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-content ul li{
+    margin-bottom: 5px;
+   
+    
+}
+
+.about-content ul li i{
+    color: #ff3636;
+    padding-right: 5px;
+    
+    
+}
+
+.about-content a{
+    margin-top: 20px;
+}
+
+
+/*5. Services Area CSS*/
+
+.service-area{
+    background-color: #f6f6f6;
+}
+
+.single-service{
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    margin-top: 30px;
+    padding: 40px 20px;
+}
+
+.single-service span{
+    font-size: 70px;
+    font-weight: 700;
+    position: absolute;
+    left:10px;
+    top: 20px;
+    color: #f2f2f2;
+    font-family: "Open Sans";
+}
+
+.single-service i{
+    background-color: #ff3636;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.single-service h4{
+    text-transform: capitalize;
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.single-service:hover i{
+    border-radius: 50%;
+}
+
+/*6. Project Area CSS*/
+
+.single-project{
+    position: relative;
+    overflow: hidden;
+}
+
+.single-project:hover .project-hover{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+}
+
+.project-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    -webkit-transform: scale(0) rotate(0);
+        -ms-transform: scale(0) rotate(0);
+            transform: scale(0) rotate(0);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.project-hover::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    opacity: .75;
+    z-index: -1;
+}
+
+.project-content{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+}
+
+.project-content i{
+    color: #fff;
+    font-size: 25px;
+}
+.project-content h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.project-content h4 span{
+    display: block;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*7. Counter Area CSS*/
+
+.counter-area{
+    background-color: #333;
+}
+.counter-area .section-title{
+    color: #fff;
+}
+.single-counter{
+    color: #fff;
+    text-align: center;
+}
+
+.single-counter i{
+    background-color: #ff3636;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.single-counter h4{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.single-counter p{
+    text-transform: capitalize;
+   
+}
+
+/*8. Timeline CSS*/
+
+.timeline{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.timeline ::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: #ff3636;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.timeline li::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ff3636;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.timeline li{
+    display: table;
+    clear: both;
+    position: relative;
+}
+.timeline li:nth-child(even) .timeline-box{
+    float: right;
+    text-align: left;
+}
+.timeline-box{
+    border: 2px solid #ff3636;
+    padding: 20px;
+    width: 45%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
+.timeline-box span{
+    font-size: 20px;
+    color: #ff3636;
+}
+
+.timeline-box h4{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+/*9. Testimonial Area CSS*/
+
+.testimonial-area{
+    background-color: #333;
+}
+
+.testimonial-area .section-title{
+    color: #fff;
+}
+
+.testimonial-area .slick-dots{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.testimonial-area .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.testimonial-area .slick-dots  li button{
+    border: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+   text-indent: -9999999px;
+    border-radius: 50%;
+    background-color: #ff3636;
+}
+
+.testimonial-area .slick-dots  li.slick-active button{
+    background-color: orange;
+}
+
+.single-testimonial{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.single-testimonial img{
+    border-radius: 50%;
+    border: 1px dashed #ddd;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.single-testimonial p{
+    margin-top: 20px;
+}
+
+.single-testimonial h4{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.single-testimonial span{
+    display: block;
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 7px;
+    font-style: italic;
+}
+
+/*10. Price Area CSS*/
+.price-area{
+    background-color: #f6f6f6;
+}
+
+.single-price{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+   
+}
+.single-price::before,.single-price:after{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 3px;
+    background-color: #ff3636;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.single-price::before{
+    left: 0;
+    top: 0;
+}
+
+.single-price:after{
+    right: 0;
+    bottom: 0;
+}
+
+.single-price:hover::before, .single-price:hover::after{
+   height: 100%;
+}
+
+
+
+.single-price h5{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+
+
+}
+
+.single-price h2{
+   font-size: 60px;
+   font-weight: 800;
+   margin: 20px 0;
+
+}
+
+.single-price ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.single-price ul li{
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.single-price ul li:last-child{
+    border: 0;
+}
+
+/*11. Team Area CSS*/
+.single-team{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.single-team .team-social{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    top: -80px;
+    left: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    opacity: .85;
+
+}
+.single-team .team-social a{
+    margin: 20px 5px;
+}
+.single-team .team-social i{
+    color: #fff;
+    font-size: 20px;
+    margin: 30px 10px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.single-team .team-social a:hover i{
+   color: #ff3636;
+}
+
+.single-team .team-content{
+    position: absolute;
+    content: "";
+    height: 30%;
+    width: 100%;
+    bottom: -120px;
+    left: 0;
+    color: #fff;
+    background-color: #333;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    opacity: .85;
+}
+
+.single-team .team-content h4{
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    line-height: 35px;
+}
+.single-team .team-content span{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.single-team:hover .team-social{
+    top: 0;
+}
+.single-team:hover .team-content{
+    bottom: 0;
+}
+
+/*12.Single Blog CSS*/
+
+.blog-img{
+    overflow: hidden;
+   
+}
+
+.single-blog img{
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.single-blog:hover img{
+ -webkit-transform: scale(1.1) rotate(5deg);
+     -ms-transform: scale(1.1) rotate(5deg);
+         transform: scale(1.1) rotate(5deg);
+}
+.single-blog .blog-content{
+    padding: 20px 20px;
+}
+.single-blog .blog-content h4{
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.single-blog .blog-content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.single-blog .blog-content ul li{
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.single-blog .blog-content ul li:last-child a:after{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    top: 10px;
+    left: -10px;
+    padding-left: 5px;
+}
+
+.single-blog .blog-content p{
+    margin-top: 20px;
+    line-height: 25px;
+}
+.single-blog a{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.single-blog a:hover{
+    color: #ff3636;
+}
+
+
+/*13. CTA Area CSS*/
+.cta-area {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-area::before{
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+background-color: #333;
+left: 0;
+top: 0;
+z-index: -1;
+opacity: .85;
+}
+
+.cta-area h4{
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-area p{
+    line-height: 25px;
+}
+
+/*14. Contact Area CSS*/
+
+.contact-area{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.contact-area .contact-form input,textarea{
+    display: block;
+   width: 80%;
+   margin: 0 auto;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+}
+
+.contact-area .contact-form input[type="submit"]{
+    background-color: #ff3636;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.contact-area .contact-form input[type="submit"]:hover{
+    background-color: #333;
+}
+
+.contact-area .contact-address ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contact-area .contact-address ul li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.contact-area .contact-address ul li:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.contact-area .contact-address ul li h4{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.contact-area .contact-address ul li span{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: lowercase;
+    display: block;
+}
+
+.contact-area .contact-address ul li .contact-icon{
+    position: relative;
+    margin-right: 30px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.contact-area .contact-address ul li .contact-icon:after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #ff3636;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    text-align: center;
+}
+
+
+/*15. Footer area CSS*/
+.footer-area{
+    background-color: #333;
+    color: #FFF;
+    padding: 50px 0;
+}
+
+.footer-area h4{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.footer-area  a{
+    color: #fff;
+    margin: 0px 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.footer-area  a:hover{
+    color: #ff3636;
+}
+
+.footer-area p{
+    border-top: 1px solid #ccc;
+    text-transform: capitalize;
+    margin-top: 30px;
+    padding-top: 30px;
+   
+}
+
+
+/*16. Responsive Css*/
+
+
+@media (max-width: 575.98px) {
+   .banner-area{
+    height: 500px;
+   }
+   .banner-content h1{
+    font-size: 48px;
+   }
+
+   .banner-content p{
+    font-size: 18px;
+   }
+
+   .timeline-box h4{
+    font-size: 20px;
+   }
+   .timeline-box p{
+    font-size: 14px;
+   }
+}
+
